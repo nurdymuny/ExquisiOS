@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ExNavigationController.h"
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#include <pjsua-lib/pjsua.h>
 
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+{ pjsua_call_id call;
+}
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UITabBarController *tabBarController;
 @end
